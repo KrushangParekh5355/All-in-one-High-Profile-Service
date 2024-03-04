@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>All in One High Profile Services</title>
+    </head>
+    <body class="contact-page">
+          <nav>
+            <div class="company-name">
+                <a href="index.html">All in one High Profile Services</a>
+            </div>
+
+            <div id="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+            </div>
+        </nav>
+        <!-- Content for the contact page goes here -->
+        <h1 style="padding-top: 25px;">This is contact page</h1>
+        
+        <!--Contact cardview-->
+        <div class="contact-container">
+            <div class="contact-card">
+                <h2 style="text-align: center;">Contact Us</h2>
+                <form>
+                    <div class="input-container" style="text-align: center;">
+                        <input type="text" id="fname" name="fname" placeholder="First Name" required>
+
+                        <input type="text" id="lname" name="lname" placeholder="Last Name" required>
+                    </div>
+                    <input style="width:86%;" type="tel" id="pnumber" name="pnumber" pattern="[0-9]{10}" placeholder="Phone Number" required>
+                    <input style="width:86%;" type="email" id="email" name="email" placeholder="Email" required>
+
+                    <textarea style="width: 86%;" id="message" name="message" rows="3" placeholder="Write your message here" required></textarea>
+
+                    <button type="submit" onclick="submitForm()">Send message</button>
+                </form>
+
+            </div>
+
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
